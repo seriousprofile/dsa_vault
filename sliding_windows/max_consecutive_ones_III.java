@@ -9,7 +9,9 @@ class Solution {
         for(int i = 0; i < nums.length; i++){
             if(nums[i] == 0) zeroes++; //keep track of zeroes!
 
-            //until zeroes count is more than k,
+            //EDIT: NOTES BECAUSE I SPENT TWO HOURS ON THIS AND LOST MY MIND:
+                // it basically means: "as long as zeroes are greater than k, it is NOT A VALID SOLUTION!! 
+            // do something!! shrink it until zeroes are either equal to k or less than k!!"
             while(zeroes > k){
                 if(nums[start] == 0){ //check if the number is a zero...
                     zeroes--;
