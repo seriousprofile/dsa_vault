@@ -22,6 +22,7 @@ class Solution {
 
             if(maxOpen < 0){
                 return false; //means there are more closing brackets
+                //to understand this better, try this case: ")*("
             }
         }
 
