@@ -1,0 +1,24 @@
+//HINT: when nums[left] + nums[right] > k then every index between left and right - 1 is also a valid triangle.
+
+class Solution {
+    public int triangleNumber(int[] nums) {
+        Arrays.sort(nums);
+        int count = 0; 
+
+        for(int k = nums.length - 1; k >= 2; k--){
+            int left = 0; 
+            int right = k - 1; 
+
+            while(left < right){
+                if(nums[left] + nums[right] > nums[k]){
+                    count += right - left; 
+                    right--;
+                } else {
+                    left++; 
+                }
+            }
+        } 
+        
+        return count; 
+    }
+}
