@@ -1,3 +1,9 @@
+/*
+Sliding Window =
+    Expand right
+    While condition violated → shrink left
+    Update answer
+*/
 Set<Character> set = new HashSet<>();
 
 int left = 0;
@@ -22,10 +28,6 @@ Trigger:
 -> Constraint on duplicates
 
 Invariant: Window always valid
-
-Action:
--> Expand right
--> While invalid → shrink left
 
 Time Complexity: O(n)
 */
