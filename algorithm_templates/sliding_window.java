@@ -18,7 +18,8 @@ for (int right = 0; right < s.length(); right++) {
     }
 
     set.add(s.charAt(right));
-    maxLen = Math.max(maxLen, right - left + 1);
+    maxLen = Math.max(maxLen, right - left + 1); 
+    //COUNTING PROBLEMS: subarray += right - left + 1 || LENGTH PROBLEMS: Math.max(maxLen, right - left + 1);
 }
 
 /*
